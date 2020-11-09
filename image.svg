@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="1538px" height="1025px" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <desc>This graphic links to an external image
+  </desc>
+  <image preserveAspectRatio="xMinYMin meet"
+         x="0" y="0" width="1538" height="1025"
+         xlink:href="https://lh3.googleusercontent.com/CF4n-sw_c4O-rz7Z8mm8VicKKVWX0jxdCO7mngirlg3yVM_ex3-Q78blJM0KGItPKkgrzlj15Bodeu0yDgpc7e7ZmJs0KBgdSoP-6ynPRT39S68gsSeQfHva7f5m6LQJ1rIwkisyc3jswYWY2Q0EA-g7Bye_91PoqpUYhrv5w7qfbeLFPm85YpTOMHvSUAFmmfofznnLknFvoRujYxuUYxyFvguqJ09ubc3jZ1y01dsd-O6-Qjg7mQZsXPKTMS-WTKX9bPBeVmdVgBodOBHZEWxBhxA_uB8aLgpwrr-0YEoWvkvwm6d2YD74K1wPYGYWyLaEsTdN83JQPbgY9lGot_nkqJYsiva6XdcPxS4eIf8olrnSNKeBBS-Cq4ioAJR4HyQrL-9vA5z1rkbPNT_umNqQvw3Iza17FopR_50lkt0LPw9S3ZgxX8bybpCObqQHBJSfdWmkTjjBqJf4Oriikx3cAXYVqwBU_-BlElCqyxtECVybtL5B3sgn5gEefT90dJb1ka0JckF50U0PWw2USUlg9mBsEH27JJ31Y1QtFxWqRWFGAH6nvVsjULjkeMoimiVh90pgIyY-fYRg_bQyRDbhIcvKKVTKKguQ_2g4X4Yyfpb_brl4LhNOuemqerKcaAonCrCzNrDnLoRu3aBOssekm9L94vMhPrF6mDTIhfY4Hlm4pyfEJqenCR3jyg=w664-h768-no?authuser=0">
+    <title>My image</title>
+  </image>
+  <rect x="0" y="0" width="1538" height="1025"
+        fill="none" stroke="blue" stroke-width="12"  />
+
+
+  <g fill="none" stroke="black" stroke-width="3" >
+    <line x1="0" y1="1.5" x2="1538" y2="1.5" />
+    <line x1="1.5" y1="0" x2="1.5" y2="1025" />
+  </g>
+  <g fill="red" stroke="none" >
+    <rect x="0" y="0" width="3" height="3" />
+    <rect x="1535" y="0" width="3" height="3" />
+    <rect x="0" y="1022" width="3" height="3" />
+  </g>
+  <g font-size="14" font-family="Verdana" >
+    <text x="10" y="20">(0,0)</text>
+    <text x="240" y="20">(300,0)</text>
+    <text x="10" y="90">(0,100)</text>
+  </g>
+
+</svg>

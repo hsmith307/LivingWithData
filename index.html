@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title>basemap -- pan & zoom</title>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<style type="text/css">
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+</style>
+</head>
+
+<body>
+    <h1 id="h1">Living With Data</h1>
+    <h2>An activity created by Hayden Smith and Jodi Bartolo</h2>
+    <p>
+        Please keep scrolling down to see the legends for the map and learn more about the experience. 
+    </p>
+    
+<script>
+
+var imgHeight = 1025, imgWidth = 1538,      // Image dimensions (don't change these)
+    width =  1100, height = 850,             // Dimensions of cropped region
+    translate0 = [-290, -180], scale0 = 1;  // Initial offset & scale
+
+svg = d3.select("body").append("svg")
+    .attr("width",  width + "px")
+    .attr("height", height + "px");
+
+svg.append("rect")
+    .attr("class", "overlay")
+    .attr("width", width + "px")
+    .attr("height", height + "px");
+
+svg = svg.append("g")
+    .attr("transform", "translate(" + translate0 + ")scale(" + scale0 + ")")
+    .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
+  .append("g");
+
+svg.append("image")
+    .attr("width",  imgWidth + "px")
+    .attr("height", imgHeight + "px")
+    .attr("xlink:href", "https://lh3.googleusercontent.com/CF4n-sw_c4O-rz7Z8mm8VicKKVWX0jxdCO7mngirlg3yVM_ex3-Q78blJM0KGItPKkgrzlj15Bodeu0yDgpc7e7ZmJs0KBgdSoP-6ynPRT39S68gsSeQfHva7f5m6LQJ1rIwkisyc3jswYWY2Q0EA-g7Bye_91PoqpUYhrv5w7qfbeLFPm85YpTOMHvSUAFmmfofznnLknFvoRujYxuUYxyFvguqJ09ubc3jZ1y01dsd-O6-Qjg7mQZsXPKTMS-WTKX9bPBeVmdVgBodOBHZEWxBhxA_uB8aLgpwrr-0YEoWvkvwm6d2YD74K1wPYGYWyLaEsTdN83JQPbgY9lGot_nkqJYsiva6XdcPxS4eIf8olrnSNKeBBS-Cq4ioAJR4HyQrL-9vA5z1rkbPNT_umNqQvw3Iza17FopR_50lkt0LPw9S3ZgxX8bybpCObqQHBJSfdWmkTjjBqJf4Oriikx3cAXYVqwBU_-BlElCqyxtECVybtL5B3sgn5gEefT90dJb1ka0JckF50U0PWw2USUlg9mBsEH27JJ31Y1QtFxWqRWFGAH6nvVsjULjkeMoimiVh90pgIyY-fYRg_bQyRDbhIcvKKVTKKguQ_2g4X4Yyfpb_brl4LhNOuemqerKcaAonCrCzNrDnLoRu3aBOssekm9L94vMhPrF6mDTIhfY4Hlm4pyfEJqenCR3jyg=w664-h768-no?authuser=0");
+
+function zoom() {
+  svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+  console.log("translate: " + d3.event.translate + ", scale: " + d3.event.scale);
+}
+
+</script>
+
+<h2>
+    Legends:
+    <br></br>
+    Top 5 Busiest Marta Stations
+    <br></br>
+    1) Five Points
+    <br></br>
+    2) College Park
+    <br></br>
+    3) Airport
+    <br></br>
+    4) Peachtree Center
+    <br></br>
+    5) Lindbergh Station
+</h2>
+</body>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
